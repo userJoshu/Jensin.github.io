@@ -99,6 +99,15 @@
 }
 
 @media only screen and (max-width: 377px) {
+    body{
+        overflow-x: hidden;
+    }
+    #hed{
+        border-radius: 100px;
+        width: 100%;
+        left: 20px;
+        right: 20px;
+    }
     #hed .logo{
         float: none;
         width: auto;
@@ -157,6 +166,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     #hed {
         border-radius: 0;
         width: 100%;
