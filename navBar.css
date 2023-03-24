@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    color: black;
+}
+
+nav{
+    font-family: 'Jua';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background-color: rgba(255,255,255, 50%);
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .link{
+    display: flex;
+}
+
+nav .link li{
+    list-style: none;
+}
+
+nav .link li a{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 0px 52px;
+    border-radius: 10px;
+    transition: all .50s ease;
+}
+
+nav .link a:hover{
+    background: #F1E26F;
+    border-radius: 10px;
+}
+
+nav .button{
+    display: flex;
+    align-items: center;
+}
+
+nav .button a{
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+nav .button a:hover{
+    background: #F1E26F;
+    border-radius: 10px;
+}
+
+#nav-toggle{
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger{
+    /* width: 20%; */
+    display: none;
+    position: absolute;
+    right: 5%;
+    margin-right: 80px;
+}
+
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    
+    nav .link{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        background-color: rgba(255, 255, 255);
+    }
+
+    nav .link a{
+        font-size: 20px;
+    }
+
+    nav :checked~ .link{
+        bottom: 0;
+    }
+
+    .button a:hover{
+        background: #F1E26F;
+        border-radius: 10px;
+    }
+
+    nav .icon-burger{
+        display: block;
+        align-items: center;
+        cursor: pointer;
+
+    }
+
+    /* animasi burger */
+    nav :checked~ .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    
+    nav :checked~ .icon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    nav :checked~ .icon-burger .line:nth-child(2){
+        opacity: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav~toggle{
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+
+
+
+/* responsive */
+/* @media screen and (max-width: 768px) {
+    nav.logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .links{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        width: auto;
+        flex-direction: column;
+    }
+
+    nav .icon-burger{
+        display: block;
+    }
+
+    nav :checked ~ .links{
+        bottom: 0;
+    }
+
+    nav:checked .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+        
+    }
+} */ 

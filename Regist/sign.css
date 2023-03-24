@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/register/regBack.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.left{
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    right: 0;
+}
+
+.left .gambar .gambar1 img{
+    width: 17vw;
+    position: absolute;
+    z-index: -1;
+    left: 90px;
+    top: 30px;
+}
+
+.left .gambar .gambar2 img{
+    width: 20vw;
+}
+
+.left .gambar .gambar2 #g1{
+    position: absolute;
+    top: 100px;
+}
+
+.left .gambar .gambar2 #g2{
+    position: absolute;
+    top: 250px;
+}
+
+.left .gambar .gambar2 #g3{
+    position: relative;
+    left: -100px;
+    top: 150px;
+}
+
+.wrapper{
+    position: relative;
+    max-width: 470px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px 30px 120px;
+    background: rgb(254, 254, 254,.8);
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.form.Login{
+    position: absolute;
+    left: 50%;
+    bottom: -83%;
+    transform: translateX(-50%);
+    width: calc(100% + 220px);
+    padding: 20px 140px;
+    border-radius: 50%;
+    height: 100%;
+    background: #fff;
+    transition: all 0.8s ease;
+}
+
+.wrapper.active .form.Login{
+    bottom: -13%;
+    border-radius: 25%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form header{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    cursor:  pointer;
+    text-decoration: none;
+}
+
+.wrapper.active .form header:hover{
+    text-decoration: underline;
+}
+
+.form.Login header{
+    color: #333;
+    opacity: 0.6;
+}
+
+.form.Login header:hover{
+    text-decoration: underline;
+}
+
+.wrapper.active .form.Login header:hover{
+    text-decoration: none;
+}
+
+.wrapper.active .form.Login header{
+    opacity: 1;
+}
+
+.wrapper.active .signUp header{
+    opacity: 0.6;
+}
+
+.wrapper form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+form input{
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+}
+
+.form.Login input{
+    border: 1px solid #aaa;
+}
+
+.form.Login input:focus{
+    box-shadow: 0 1px 0 #ddd;
+}
+
+form .checkBox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.checkBox input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    accent-color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+form .checkBox label{
+    cursor: pointer;
+}
+
+form a{
+    color: #333;
+    text-decoration: none;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+form input[type="submit"]{
+    margin-top: 15px;
+    background: #FF3B39;
+    color: #fff;
+    padding: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form input[type="number"]::-webkit-inner-spin-button,  input[type ="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form.Login [type="submit"]{
+    color: #fff;
+    background: #FF3B39;
+    border: none;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Lexend+Deca:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../Tempalte.css"> 
+    <link rel="stylesheet" href="../templateNavbar.css">
+    <link rel="stylesheet" href="maps.css">
+
+    <script src="maps.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenshin IMpekz-Maps</title>
+
+</head>
+<link rel="icon" href="../assets/Logo.png">
+<body>
+    <header>
+        <nav id="hed">
+
+            <input type="checkbox" id="nav-toggle">
+            <div class="logo">
+                <img src="../assets/News/logo.png" alt="logo">
+            </div>
+        
+            <ul class="link">
+                <li><a href="../Home/index.html">Home</a></li>
+                <li> <a href="../Character/charachter.html">Characters</a></li>
+                <li><a href="../Maps/maps.html">Maps</a></li>
+                <li><a href="../About/about.html">About Game</a></li>
+                
+            </ul>
+        
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        
+            <div class="button">
+                <a href="../Regist/sign.html">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <div class="isiMap">
+        
+        <div class="isiAtas">
+
+            <div class="imgMap">
+                <img id="imgMapChange" src="../assets/Maps/asiaMaps.png" alt="">
+    
+            </div>
+    
+            <div class="descMap">
+
+                <div class="asiaDesc">
+
+                    <h2>Asia</h2>
+                    <p>Asia has the largest map in Jenshin IMpekz, it has more than 20 places to explore, such as forest, waterfall, lake, and many more. </p>
+                        <br>
+                    <p> You will never get bored to explore Asia!</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="mapsButton">
+
+            <button onclick="changeImg('../assets/Maps/asiaMaps.png')">Asia</button>
+            <button onclick="changeImg('../assets/Maps/europeMaps.png')">Europe</button>
+            <button onclick="changeImg('../assets/Maps/africaMaps.png')">Africa</button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    
+    <!-- CONTENT -->
+
+    <footer>
+        <div id="containerFooter" style="background-color: rgb(25, 25, 25);">
+            <div id="footer">
+                <div id="footLeft">
+                    <div id="footLeftLogo">
+                        <img src="../assets/Logo.png">
+                    </div>
+                    <a href="https://linktr.ee/tgrcompany"><img src="../assets/sosmed.png"></a>
+                </div>
+                <div id="footMid">
+                    <div id="kiri">
+                        <nav id="fot">
+                            <ul>
+                                <li><a href="../Home/index.html">Home</a></li>
+                                <li><a href="../Character/charachter.html">Character</a></li>
+                                <li><a href="../Maps/maps.html">Maps</a></li>
+                                <li><a href="../About/about.html">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div id="kanan">
+                        <p>privacy Policy</p>
+                        <p>terms of Service</p>
+                        <p>contact us</p>
+                    </div>
+                </div>
+                <div id="footRight">
+                    <h1>
+                        Jenshin IMpekz
+                    </h1>
+                    <p>
+                        Jenshin IMpekz is a social simulation video game series developed and published by TGR Company. 
+ 
+                    </p>
+                    <p>
+                        The series was conceptualized and created by Marcellino Joshua Kristanto and Yohanna Yonathan.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,790 @@
+.container-Jumbotron{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/Character/backChar.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper img{
+    margin: 50px;
+    /* position: absolute; */
+    width: 25vw;
+    display: flex;
+}
+
+.wrapper .foto1{
+    position: absolute;
+}
+
+.wrapper .foto2{
+    /* position: absolute; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .foto3{
+    /* position: absolute;*/
+    margin-top: -350px;
+    z-index: -100;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    /* margin-left: 40px; */
+}
+
+.wrapper .foto4{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.wrapKata{
+    position: absolute;
+    width: 500px;
+    top: 60%;
+    left: 10%;
+    /* background: rgb(255, 3   8, 38); */
+}
+
+.wrapKata .kata {
+    /* top: 0; */
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 20px 20px 10px; 
+} 
+
+
+
+/* **************************ASIA************************************************************ */
+
+.wrapper-asia{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/Character/backAsia.png");
+}
+
+.headCharAsia img{
+    margin: 50px;
+    margin-left: 150px;
+    width: 13vw;
+}
+
+.KumpulanAsia{
+    display: flex;
+    width: 300%;
+    transition: 0.5s ease-in-out;
+}
+.AsiaGambar input{
+    visibility: hidden;;
+}
+
+.AsiaGambar{
+    width: 50vw;
+    overflow: hidden;
+}
+.cardWrapper{
+    width: 100%;
+}
+.wrapper-asia .AsiaGambar .pindahGambarAsia{
+    position: absolute;
+    top: 140%;
+    left: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-pindah label .pinAsia{
+    width: 80px;
+}
+
+.pindahGambarAsia label{
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-size: cover;
+    margin-left: 40px;
+}
+
+.pindahGambarAsia label .pinAsia{
+    filter: blur(0.5px);
+    /* width: 80px; */
+}
+
+.pindahGambarAsia label .pinAsia:hover{
+    filter: blur(0);
+}
+
+.wrapper-asia .AsiaGambar .pindahGambarAsiaCad{
+    position: absolute;
+    top: 160%;
+    left: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pindahGambarAsiaCad label{
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    margin-left: 40px;
+}
+
+.pindahGambarAsia label:first-child{
+    margin-left: 0;
+}
+
+input#card-2:checked ~ .KumpulanAsia{
+    margin-left: -100%;
+}
+input#card-3:checked ~ .KumpulanAsia{
+    margin-left: -200%;
+}
+
+.pindahGambarAsiaCad label .pinAsia{
+    /* filter: blur(1px); */
+    /* width: 80px; */
+}
+
+.pindahGambarAsiaCad label:first-child{
+    margin-left: 0;
+}
+
+/* LILI##################################################################################### */
+
+.card {
+    width: 35vw;
+    height: 53vh;
+    border-radius: 19px;
+
+    /* background-color: #fff; */
+    position: relative;
+
+    margin: 30px;
+    margin-top: 0;
+    margin-left: 150px;
+}
+
+.card .back-char{
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 19px;
+    width: 35vw;
+    z-index:0;
+    border: 3px dotted rgb(209, 152, 88);
+}
+
+.card :hover.back-char  {
+    border-radius: 19px;
+    -webkit-transition: ease-in-out 0.3s;
+    box-shadow: 0px 4px 15px 1px white;
+    border: 3px solid rgb(209, 152, 88);
+}
+
+.card .backAs .title{
+    /* position: a; */
+    opacity: 5%;
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 7%;
+    font-size: 200px;
+}
+
+.card .charName{
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    margin-left: 180px;
+}
+
+.card .charName .name1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.card .charName1 .name2{
+    font-size: 20px;
+}
+
+
+.cardImage{
+    position: relative;
+    height: 250px;
+    width: 150px;
+    /* background: rgb(247, 233, 202); */
+    padding: 3px;
+}
+
+.cardImage .cardImg{
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border: 4px solid rgb(112, 80, 52); */
+}
+
+.wepon{
+    margin-top: 40px;
+    display: flex;
+}
+
+.wepon img{
+    margin-right: 20px;
+}
+
+.wepon .weponImg1{
+    border-radius: 50px;
+    background-color: #E3B499;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+    text-shadow: 10px;
+}
+.wepon .weponImg2{
+    border-radius: 50px;
+    background-color: #E3B499;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+}
+.wepon .weponImg3{
+    border-radius: 50px;
+    background-color: #E3B499;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+}
+
+.wepon .weponImg1:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}
+
+.wepon .weponImg2:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}
+
+.wepon .weponImg3:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}
+/* ***************************************************************************************** */
+/* **************************AFRIKA************************************************************ */
+
+
+.wrapper-afrika{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/Character/backAfrika.png");
+}
+
+.headCharAfrika{
+    display: flex;
+    justify-content: end;
+}
+
+.headCharAfrika img{
+    margin: 50px;
+    margin-right: 150px;
+    width: 13vw;
+}
+
+.KumpulanAfrika{
+    display: flex;
+    width: 300%;
+    transition: 0.5s ease-in-out;
+}
+.AfrikaGambar input{
+    visibility: hidden;;
+}
+
+.AfrikaGambar{
+    width: 50vw;
+    overflow: hidden;
+}
+
+/*  */
+
+.cardWrapper{
+    width: 100%;
+}
+.wrapper-afrika .AfrikaGambar .pindahGambarAfrika{
+    position: absolute;
+    top: 240%; /* ini yang harus diganti*/
+    left: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-afrika .AfrikaGambar .wrapper-pindah label .pinAfrika{
+    width: 80px;
+}
+
+.pindahGambarAfrika label{
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-size: cover;
+    margin-left: 40px;
+}
+
+.pindahGambarAfrika label .pinAfrika{
+    filter: blur(0.5px);
+    /* width: 80px; */
+}
+
+.pindahGambarAfrika label .pinAfrika:hover{
+    filter: blur(0);
+}
+
+.wrapper-afrika .AfrikaGambar .pindahGambarAfrikaCad{
+    position: absolute;
+    top: 260%;
+    left: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pindahGambarAfrikaCad label{
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    margin-left: 40px;
+}
+
+.pindahGambarAfrika label:first-child{
+    margin-left: 0;
+}
+
+input#card-21:checked ~ .KumpulanAfrika{
+    margin-left: -100%;
+}
+input#card-31:checked ~ .KumpulanAfrika{
+    margin-left: -200%;
+}
+
+.pindahGambarAfrikaCad label:first-child{
+    margin-left: 0;
+}
+
+
+/* ***************************************************************************************** */
+.card1 {
+    width: 35vw;
+    height: 53vh;
+    border-radius: 19px;
+
+    /* background-color: #fff; */
+    position: relative;
+
+    margin: 30px;
+    margin-top: 0;
+    margin-left: 150px;
+}
+
+.card1 .back-char{
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 19px;
+    width: 35vw;
+    z-index:0;
+    border: 3px dotted rgb(209, 152, 88);
+}
+
+.card1 :hover.back-char{
+    border-radius: 19px;
+    -webkit-transition: ease-in-out 0.3s;
+    box-shadow: 0px 4px 15px 1px white;
+    border: 3px solid rgb(209, 152, 88);
+}
+
+.card1 .backAf .title{
+    /* position: a; */
+    opacity: 5%;
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 7%;
+    font-size: 200px;
+}
+
+.card1 #backAff .title{
+    /* position: a; */
+    opacity: 5%;
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 9%;
+    font-size: 140px;
+}
+
+.card1 #backAfff .title{
+    /* position: a; */
+    opacity: 5%;
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 9%;
+    font-size: 150px;
+}
+
+.card1 .charName{
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    margin-left: 180px;
+}
+
+.card1 .charName .name1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.card1 .charName1 .name2{
+    font-size: 20px;
+}
+
+
+.card1 .cardImage{
+    position: relative;
+    height: 250px;
+    width: 150px;
+    /* background: rgb(247, 233, 202); */
+    padding: 3px;
+}
+
+.card1 .cardImage .cardImg{
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border: 4px solid rgb(112, 80, 52); */
+}
+
+.card1 .wepon{
+    margin-top: 40px;
+    display: flex;
+}
+
+.card1 .wepon img{
+    margin-right: 20px;
+}
+
+.card1 .wepon .weponImg1{
+    border-radius: 50px;
+    background-color: #9BD7AF;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+    text-shadow: 10px;
+}
+.card1 .wepon .weponImg2{
+    border-radius: 50px;
+    background-color: #9BD7AF;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+}
+.card1 .wepon .weponImg3{
+    border-radius: 50px;
+    background-color: #9BD7AF;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+}
+
+.wepon .weponImg1:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}
+
+.wepon .weponImg2:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}
+
+.wepon .weponImg3:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}
+
+/* **************************EROPA************************************************************ */
+
+.wrapper-eropa{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/Character/backErop.png");
+}
+
+.headCharEropa{
+    display: flex;
+    justify-content: end;
+}
+
+.headCharEropa img{
+    margin: 50px;
+    margin-left: 150px;
+    width: 13vw;
+}
+
+/* #################################################### */
+
+.KumpulanEropa{
+    display: flex;
+    width: 300%;
+    transition: 0.5s ease-in-out;
+}
+.EropaGambar input{
+    visibility: hidden;;
+}
+
+.EropaGambar{
+    width: 50vw;
+    overflow: hidden;
+}
+
+/*  */
+
+.KumpulanEropa .cardWrapper{
+    width: 100%;
+}
+.wrapper-eropa .EropaGambar .pindahGambarEropa{
+    position: absolute;
+    top: 340%; /* ini yang harus diganti*/
+    left: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-eropa .EropaGambar .wrapper-pindah label .pinEropa{
+    width: 80px;
+}
+
+.pindahGambarEropa label{
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-size: cover;
+    margin-left: 40px;
+}
+
+.pindahGambarEropa label .pinEropa{
+    filter: blur(0.5px);
+    /* width: 80px; */
+}
+
+.pindahGambarEropa label .pinEropa:hover{
+    filter: blur(0);
+}
+
+.wrapper-eropa .EropaGambar .pindahGambarEropaCad{
+    position: absolute;
+    top: 360%;
+    left: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pindahGambarEropaCad label{
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    margin-left: 40px;
+}
+
+.pindahGambarEropa label:first-child{
+    margin-left: 0;
+}
+
+input#card-22:checked ~ .KumpulanEropa{
+    margin-left: -100%;
+}
+input#card-32:checked ~ .KumpulanEropa{
+    margin-left: -200%;
+}
+
+.pindahGambarEropaCad label:first-child{
+    margin-left: 0;
+}
+
+
+/* ***************************************************************************************** */
+.card2 {
+    width: 35vw;
+    height: 53vh;
+    border-radius: 19px;
+
+    /* background-color: #fff; */
+    position: relative;
+
+    margin: 30px;
+    margin-top: 0;
+    margin-left: 150px;
+}
+
+.card2 .back-char{
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 19px;
+    width: 35vw;
+    z-index:0;
+    border: 3px dotted rgb(209, 152, 88);
+}
+
+.card2 :hover.back-char{
+    border-radius: 19px;
+    -webkit-transition: ease-in-out 0.3s;
+    box-shadow: 0px 4px 15px 1px white;
+    border: 3px solid rgb(209, 152, 88);
+}
+
+.card2 .backEr .title{
+    /* position: a; */
+    opacity: 5%;
+    text-transform: capitalize;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 7%;
+    font-size: 200px;
+}
+
+.card2 .charName{
+    position: absolute;
+    top: 0;
+    margin-top: 80px;
+    margin-left: 180px;
+}
+
+.card2 .charName .name1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.card2 .charName1 .name2{
+    font-size: 20px;
+}
+
+
+.card2 .cardImage{
+    position: relative;
+    height: 250px;
+    width: 150px;
+    /* background: rgb(247, 233, 202); */
+    padding: 3px;
+}
+
+.card2 .cardImage .cardImg{
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border: 4px solid rgb(112, 80, 52); */
+}
+
+.card2 .wepon{
+    margin-top: 40px;
+    display: flex;
+}
+
+.card2 .wepon img{
+    margin-right: 20px;
+}
+
+.card2 .wepon .weponImg1{
+    border-radius: 50px;
+    background-color: #9BC9D7;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+    text-shadow: 10px;
+}
+.card2 .wepon .weponImg2{
+    border-radius: 50px;
+    background-color: #9BC9D7;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+}
+.card2 .wepon .weponImg3{
+    border-radius: 50px;
+    background-color: #9BC9D7;
+    position: relative;
+    margin-top: 5px;
+    width: 60px;
+}
+
+.wepon .weponImg1:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}
+
+.wepon .weponImg2:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}
+
+.wepon .weponImg3:hover{
+    border: 2px solid rgb(112, 80, 52);
+    border-radius: 50px;
+    background-color: unset;
+    /* -webkit-transition: ease-out 1s; */
+    -webkit-transition: ease-in-out 0.1s;
+    width: 70px;
+}

@@ -1,0 +1,90 @@
+.container-jumbtron{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/About/jumboUp.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbo{
+    display: flex;
+    justify-content: center;
+}
+
+.jumbo #borders{
+    width: 100%;
+    height: auto;
+    top: 590px;
+    position: absolute;
+    z-index: 0;
+}
+
+.jumbo #header{
+    margin: 20px;
+    position: absolute;
+    width: 450px;
+    top: 530px;
+}
+
+.jumbo #kata{
+    position: absolute;
+    width: 450px;
+    top: 670px;
+}
+
+.yori-card{
+
+    display: flex;
+    /* align-items: start; */
+}
+
+#yori{
+    position: absolute;
+    top: 600px;
+    left: 250px;
+    width: 100px;
+}
+
+#yuna{
+    position: absolute;
+    top: 600px;
+    width: 100px;
+    right: 250px;
+}
+
+.container-isi{
+    width: 100%;
+    height: 800px;
+    background-image: url("../assets/About/wallpaper.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container-isi #gam1{
+    position: absolute;
+    margin-top: 450px;
+    width: 440px;
+    margin-left: 600px;
+}
+
+.container-isi #gam11{
+    margin-top: 400px;
+    width: 450px;
+    position: absolute;
+    margin-left: 200px;
+}
+
+.container-isi #gam2{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 250px;
+    z-index: 1;
+    width: 440px;
+}
+
+.container-isi #gam21{
+    position: absolute;
+    margin-top: 265px;
+    margin-left: 500px;
+    width: 600px;
+}

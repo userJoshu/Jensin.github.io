@@ -1,0 +1,20 @@
+
+
+.navBar-left ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 50px;
+}
+
+.navBar-left ul {
+    text-align: left;
+}
+
+.navBar-left ul li:first-child {
+    margin-left: 0;
+}
+
+.navBar-left ul li a{
+    text-decoration: none;
+    color: #000;
+}

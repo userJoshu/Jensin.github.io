@@ -1,0 +1,103 @@
+*{
+    /* font-family: "SoDo Sans semiBold",Helvetica Neue,Helvetica,Arial,sans-serif; */
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+    /* font-family: 'Lexend Deca', sans-serif; */
+}
+
+body{
+    margin: 0px;
+    
+}
+/* **************************************************** */
+
+/* ************************************************************************************** */
+
+/* FOOTER */
+#containerFooter{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#footer{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: 100;
+    padding: 50px 50px 60px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* buat logo di sebelah kiri */
+#footLeft img{
+    width: 160px;
+}
+
+#footMid{
+    margin-left: 160px;
+    display: flex;
+    text-transform: capitalize;
+}
+
+
+
+#kiri{
+    margin-left: 40px;
+    margin-right: 70px;
+    text-align: left;
+}
+
+#kiri ul li{
+    list-style: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#kiri ul {
+    text-align: left;
+} 
+
+#kiri ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#kiri ul li :hover{
+    color: black;
+    text-shadow: 2px 2px 8px  #c9c8bf;
+}
+
+#kanan{
+    width: 150px;
+    margin: 10px 15px ;
+    vertical-align: middle;
+    margin-right: 100px;
+}
+
+#kanan p{
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#kanan p:hover{
+    color: black;
+    text-shadow: 2px 2px 8px  #c9c8bf;
+}
+
+#footRight{
+}
+
+#footRight h1{
+    color: #fff;
+    text-shadow: 2px 2px 8px  #ffdfdf;
+    margin-bottom: 20px;
+}
+
+#footRight p{
+    color: #fff;
+}

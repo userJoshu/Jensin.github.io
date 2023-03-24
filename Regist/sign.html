@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenshin IMpekz-Register</title>
+    <link type="text/css" rel="stylesheet" href="../Tempalte.css"> 
+    <link rel="stylesheet" href="../templateNavbar.css">
+    
+    <link rel="stylesheet" href="sign.css">
+</head>
+<link rel="icon" href="../assets/Logo.png">
+
+<body class="reg">
+
+    <nav id="hed">
+
+        <input type="checkbox" id="nav-toggle">
+        <div class="logo">
+            <img src="../assets/News/logo.png" alt="logo">
+        </div>
+    
+        <ul class="link">
+            <li><a href="../Home/index.html">Home</a></li>
+            <li> <a href="../Character/charachter.html">Characters</a></li>
+            <li><a href="../Maps/maps.html">Maps</a></li>
+            <li><a href="../About/about.html">About Game</a></li>
+            
+        </ul>
+    
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    
+        <div id="button">
+            <a href="../Regist/sign.html">Register</a>
+        </div>
+    </nav>
+
+    <div class="container-Sign">
+        <div class="split left">
+            <section class="gambar">
+                <div class="gambar1">
+                    <img src="../assets/register/gam1.png" alt="">
+                </div>
+                <div class="gambar2">
+                    <img src="../assets/register/gam2.png" alt="" id="g1">
+                </div>
+                <div class="gambar2">
+                    <img src="../assets/register/gam3.png" alt="" id="g2">
+                </div>
+                <div class="gambar2">
+                    <img src="../assets/register/gam4.png" alt="" id="g3">
+                </div>
+            </section>
+        </div>
+        <div class="split right">
+            <section class="wrapper">
+                <div class="form signUp">
+                    <header>Signup</header>
+                    <form action="#" >
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email">
+                        <input type="number" placeholder="Age">
+                        <input type="password" placeholder="Create Password">
+                        <div class="checkBox">
+                            <input type="checkbox" id="signupCheck">
+                            <label for="signupCheck">I agree to the TGR Company User Agreement</label>
+                        </div>
+                        <input type="submit" value="Signup" >
+        
+                    </form>
+                </div>
+
+                <div class="form Login">
+                    <header>Login</header>
+                    <form action="../Home/index.html">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Input Password">
+                        <a href="#">Forgot password?</a>
+                        <input type="submit" value="Login">
+        
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="sign.js"></script>
+</html>
