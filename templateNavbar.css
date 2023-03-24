@@ -98,8 +98,7 @@
     border-radius: 3px;
 }
 
-
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 377px) {
     #hed .logo{
         float: none;
         width: auto;
@@ -156,6 +155,74 @@
     }
     
 }
+
+@media only screen and (max-width: 768px) {
+    #hed {
+        border-radius: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    #hed .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    
+    #hed .link{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        background-color: rgba(255, 255, 255);
+    }
+
+    #hed .link a{
+        font-size: 20px;
+    }
+
+    #hed :checked~ .link{
+        bottom: 0;
+    }
+
+    #hed .button a:hover{
+        background: #F1E26F;
+        border-radius: 10px;
+    }
+
+    #hed .icon-burger{
+        display: block;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 100px;
+    }
+
+    /* animasi burger */
+    #hed :checked~ .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    
+    #hed :checked~ .icon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    #hed :checked~ .icon-burger .line:nth-child(2){
+        opacity: 0;
+    }
+    
+}
+
+
+
 
 
 
