@@ -536,7 +536,10 @@ body{
 
 
 
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 391px){
+    body{
+        overflow-x: hidden;
+    }
     #jumbotron1{
         width: calc(100% + 0vw);
         height: 70vh;
@@ -562,6 +565,9 @@ body{
     }
     .aset img{
         width: 0;
+    }
+    .slideFrame{
+        display: none;
     }
     .slideImages{
         display: none;
@@ -626,7 +632,7 @@ body{
     }
     .toCharacter{
         display: block;
-        width: 800px;
+        width: 600px;
         margin-top: 90px;
         margin-left: -300px;
     }

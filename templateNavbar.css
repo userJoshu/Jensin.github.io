@@ -18,12 +18,14 @@
     background-position: center;
 } */
 
+
 #hed{
+    width: 100vw;
     font-family: 'Jua';
     position: fixed;
     top: 0;
-    left: 20px;
-    right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -34,16 +36,22 @@
     border-radius: 100px;
 }
 
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
 #hed .logo{
     display: flex;
     align-items: center;
 }
 
 #hed .link{
+    width: 100%;
     display: flex;
 }
 
 #hed .link li{
+    width: 100%;
     list-style: none;
 }
 
@@ -98,72 +106,6 @@
     border-radius: 3px;
 }
 
-@media only screen and (max-width: 377px) {
-    body{
-        overflow-x: hidden;
-    }
-    #hed{
-        border-radius: 100px;
-        width: 100vw;
-        left: 20px;
-        right: 20px;
-    }
-    #hed .logo{
-        float: none;
-        width: auto;
-        justify-content: center;
-    }
-    
-    #hed .link{
-        float: none;
-        position: fixed;
-        z-index: 9;
-        left: 0;
-        right: 0;
-        top: 100px;
-        bottom: 100%;
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        overflow: hidden;
-        transition: all 0.5s ease-in-out;
-        background-color: rgba(255, 255, 255);
-    }
-
-    #hed .link a{
-        font-size: 20px;
-    }
-
-    #hed :checked~ .link{
-        bottom: 0;
-    }
-
-    #hed .button a:hover{
-        background: #F1E26F;
-        border-radius: 10px;
-    }
-
-    #hed .icon-burger{
-        display: block;
-        align-items: center;
-        cursor: pointer;
-        margin-right: 100px;
-    }
-
-    /* animasi burger */
-    #hed :checked~ .icon-burger .line:nth-child(1){
-        transform: translateY(10px) rotate(225deg);
-    }
-    
-    #hed :checked~ .icon-burger .line:nth-child(3){
-        transform: translateY(-10px) rotate(-225deg);
-    }
-    #hed :checked~ .icon-burger .line:nth-child(2){
-        opacity: 0;
-    }
-    
-}
 
 @media only screen and (max-width: 768px) {
     body{
@@ -171,7 +113,7 @@
     }
     #hed {
         border-radius: 0;
-        width: 100%;
+        width: 375px;
         left: 0;
         right: 0;
     }
@@ -233,6 +175,74 @@
     
 }
 
+
+
+@media only screen and (max-width: 400px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    #hed{
+        border-radius: 100px;
+        width: 100vw;
+    }
+
+    #hed .logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    
+    #hed .link{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        background-color: rgba(255, 255, 255);
+    }
+
+    #hed .link a{
+        font-size: 20px;
+    }
+
+    #hed :checked~ .link{
+        bottom: 0;
+    }
+
+    #hed .button a:hover{
+        background: #F1E26F;
+        border-radius: 10px;
+    }
+
+    #hed .icon-burger{
+        display: block;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 100px;
+    }
+
+    /* animasi burger */
+    #hed :checked~ .icon-burger .line:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    
+    #hed :checked~ .icon-burger .line:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+    #hed :checked~ .icon-burger .line:nth-child(2){
+        opacity: 0;
+    }
+    
+}
 
 
 
