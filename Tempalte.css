@@ -115,7 +115,7 @@ body{
 @media only screen and (max-width: 391px){
 
     #containerFooter{
-        height: 115vh;
+        height: 90vh;
         /* overflow-x: hidden; */
         /* display: block; */
     }

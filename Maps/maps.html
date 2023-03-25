@@ -57,14 +57,33 @@
     
             <div class="descMap">
 
-                <div class="asiaDesc">
+                <div class="descMapBox" id="asiaDesc">
 
-                    <h2>Asia</h2>
+                    <h2 id="title">Asia</h2>
+                    <p id="desc">Asia has the largest map in Jenshin IMpekz, it has more than 20 places to explore, such as forest, waterfall, lake, and many more. </p>
+                        <br>
+                    <p> You will never get bored to explore Asia!</p>
+
+                </div>
+
+                <!-- <div class="descMapBox" id="europeDesc">
+
+                    <h2>Europe</h2>
                     <p>Asia has the largest map in Jenshin IMpekz, it has more than 20 places to explore, such as forest, waterfall, lake, and many more. </p>
                         <br>
                     <p> You will never get bored to explore Asia!</p>
 
                 </div>
+
+                <div class="descMapBox" id="africaDesc">
+
+                    <h2>Africa</h2>
+                    <p>Asia has the largest map in Jenshin IMpekz, it has more than 20 places to explore, such as forest, waterfall, lake, and many more. </p>
+                        <br>
+                    <p> You will never get bored to explore Asia!</p>
+
+                </div> -->
+                
 
             </div>
 
@@ -73,7 +92,7 @@
         <div class="mapsButton">
 
             <button onclick="changeImg('../assets/Maps/asiaMaps.png')">Asia</button>
-            <button onclick="changeImg('../assets/Maps/europeMaps.png')">Europe</button>
+            <button onclick="changeImg('../assets/Maps/europeMaps.png')"; onclick="changeDesc()">Europe</button>
             <button onclick="changeImg('../assets/Maps/africaMaps.png')">Africa</button>
 
 
