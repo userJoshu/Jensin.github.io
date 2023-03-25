@@ -232,13 +232,7 @@ body{
     /* visibility: hidden; */
 }   
 
-.toCharacter #btn:hover{
-    background-image: url("../assets/moreCharacterHov.png");
-}
 
-.toCharacter #btn img{
-    width: 200px;
-}
 
 /* end card 2 ************************************************************************ */
 
@@ -331,14 +325,6 @@ body{
     align-items: center;
 }
 
-.wrapper-buy #background {
-    
-}
-
-.wrapper-buy #background .gambar{
-   
-}
-
 .wrapper-buy #background .gambar img{
     position: absolute;
     margin-top: -150px;
@@ -361,7 +347,7 @@ body{
 .wrapper-buy #background .belakang h1{
     z-index: 1;
     width: 300px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 70px;
     font-size: 20px;
     font-weight: lighter;
@@ -374,9 +360,6 @@ body{
     width: 200px;
     right: 0;
     margin-top: 20px;
-}
-
-.wrapper-buy #background .wrapBawah{
 }
 
 .wrapper-buy #background .bawah img{
@@ -411,6 +394,35 @@ body{
     width: 130px;
 }
 
+.buyButton{
+    position: absolute;
+    margin-top: 110px;
+}
+
+.buyButton a{
+    text-transform: lowercase;
+    color: #fff;
+    background-color: #7FC4D9;
+    margin-left: 140px;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 15px;
+    border-radius: 100px;
+}
+
+.buyButton a:hover{
+    border: 4px solid #463D2C;
+}
+
+.buyButton #btn{
+    cursor: pointer;
+    margin-left: 500px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    /* visibility: hidden; */
+}   
+
 @media only screen and (max-width: 1040px){
     #jumbotron1{
         width: calc(100% + 0vw);
@@ -421,7 +433,6 @@ body{
         margin-left: 90px;
         margin-top: 250px;
         margin-bottom: 150px;
-        width: 20px;
         width: 350px !important;
         /* background-color: red; */
     }
@@ -432,7 +443,6 @@ body{
     }
     #title img{
         width: 200px;
-        justify-content: center;
         margin-left: 90px;
         margin-top: 70px;
     }
@@ -450,6 +460,7 @@ body{
     /* New Character */
     .wraperChar{
         margin-top: -20px;
+        height: 50vh;
     }
     .newChar{
         width: 600px;
@@ -485,11 +496,41 @@ body{
         margin-left: 50px;
         margin-right: 160px;
     }
+    .toCharacter{
+        margin-top: -250px;
+        position: absolute;
+    }
     .toCharacter a{
-        margin-left: 500px !important;
+        margin-left: 400px !important;
     }
     .toCharacter a:hover{
         border: 4px solid #463D2C;
+    }
+
+    /* MAPS */
+    .containerMaps{
+        height: 50vh;
+    }
+    /* Buy Now */
+    .wrapper-buy{
+        height: 50vh;
+    }
+    .wrapper-buy #background .belakang{
+        left: 331px;
+        height: 17vh;
+    }
+    .wrapper-buy #background .bawahIsi #hp1{
+        position: absolute;
+        margin-top: 60px;
+        right: 220px;
+        width: 200px;
+    }
+    
+    .wrapper-buy #background .bawahIsi #hp2{
+        position: absolute;
+        margin-top: 60px;
+        right: 150px;
+        width: 130px;
     }
 }
 
@@ -507,6 +548,8 @@ body{
         margin-bottom: 150px;
         width: 200px !important;
     }
+
+    /* News */
     .slideImages .img1 img{
         width: 300px;
     }
@@ -519,6 +562,9 @@ body{
     }
     .aset img{
         width: 0;
+    }
+    .slideImages{
+        height: 200px;
     }
 
     /* New Character */
@@ -580,8 +626,8 @@ body{
     .toCharacter{
         display: block;
         width: 800px;
-        margin-top: 40px;
-        margin-left: -400px;
+        margin-top: 90px;
+        margin-left: -300px;
     }
     .wraperChar #borderChar{
         width: 300px;
@@ -590,6 +636,64 @@ body{
         border: 4px solid #463D2C;
     }
     .toCharacter a:hover{
+    }
+
+    /* Maps */
+    .wrap{
+        display: none;
+    }
+
+    /* Buy Now */
+    .wrapper-buy #background .gambar img{
+        margin-left: 20px;
+        width: 150px;
+    }
+    .wrapper-buy #background .belakang{
+        left: 55px;
+        width: 300px;
+        height: 20vh;
+        margin-top: -145px;
+    }
+    .wrapper-buy #background .belakang img{
+        display: none;
+    }
+
+    .wrapper-buy #background .belakang h1{
+        width: 140px;
+        margin-left: 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .wrapper-buy #background .bawah img{
+        position: absolute;
+        width: 300px;
+        height: 90px;
+        margin-top:10px;
+        margin-left: -140px;
+    }
+    
+    .wrapper-buy #background .bawahIsi h1{
+        width: 240px;
+        margin-top: 40px;
+        margin-left: -110px;
+        font-weight: lighter;
+        font-size: 12px;
+        text-align: center;
+        position: absolute;
+    }
+    
+    .wrapper-buy #background .bawahIsi #hp1{
+        display: none;
+    }
+    
+    .wrapper-buy #background .bawahIsi #hp2{
+        display: none;
+    }
+
+    .buyButton{
+        position: absolute;
+        margin-top: 280px;
+        margin-left: -50px;
     }
 }
 
