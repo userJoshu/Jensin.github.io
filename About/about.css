@@ -99,9 +99,23 @@
     width: 440px;
 }
 
-.container-isi #gam21{
+.container-isi #wrapIsi2 .gambar21{
+    margin-top: 47vh;
+    margin-left: 48vw;
     position: absolute;
-    margin-top: 265px;
-    margin-left: 500px;
-    width: 600px;
+    width: 35vw;
+    height: 30vh;
+    background-color: #CDF2FA;
+}
+
+.container-isi #wrapIsi2 .gambar21 h1{
+    margin-left: 8vw;
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+}
+
+.container-isi #wrapIsi2 .gambar21 p{
+    margin-left: 9vw;
+    width: 20vw;
+    text-align: center;
 }
