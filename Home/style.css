@@ -564,6 +564,7 @@ body{
         width: 0;
     }
     .slideImages{
+        display: none;
         height: 200px;
     }
 

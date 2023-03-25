@@ -20,6 +20,7 @@ body{
     width: 100%;
     height: 100%;
     color: white;
+    background-color: rgb(25, 25, 25);
 }
 
 #footer{
@@ -100,4 +101,33 @@ body{
 
 #footRight p{
     color: #fff;
+}
+
+@media only screen and (max-width: 1040px){
+    #footMid{
+        margin-left: 40px;
+    }
+    #kanan{
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 391px){
+
+    #containerFooter{
+        height: 115vh;
+        /* overflow-x: hidden; */
+        /* display: block; */
+    }
+    #footer{
+        display: block;
+        overflow-x: hidden;
+    }
+    #footMid{
+        margin-top: 50px;
+        margin-left: -20px;
+        width: 400px;
+        margin-bottom: 50px;
+    }
+
 }
