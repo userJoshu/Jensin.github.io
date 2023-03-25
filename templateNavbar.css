@@ -18,14 +18,13 @@
     background-position: center;
 } */
 
-
 #hed{
-    width: 100vw;
+    width: 100%;
+    left: 0px;
+    right: 200px;
     font-family: 'Jua';
     position: fixed;
     top: 0;
-    /* margin-left: 20px;
-    margin-right: 20px; */
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -91,7 +90,7 @@
 }
 
 #hed .icon-burger{
-    /* width: 20%; */
+    width: 20%;
     display: none;
     position: absolute;
     right: 5%;
@@ -113,7 +112,7 @@
     }
     #hed {
         border-radius: 0;
-        width: 375px;
+        width: 100%;
         left: 0;
         right: 0;
     }
@@ -142,7 +141,7 @@
     }
 
     #hed .link a{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     #hed :checked~ .link{
@@ -189,7 +188,8 @@
 
     #hed .logo{
         float: none;
-        width: auto;
+        width: 100%;
+        margin-left: -90px;
         justify-content: center;
     }
     
@@ -201,7 +201,7 @@
         right: 0;
         top: 100px;
         bottom: 100%;
-        width: 100%;
+        width: 100vw;
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
