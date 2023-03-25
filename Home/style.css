@@ -650,6 +650,20 @@ body{
         display: none;
     }
 
+    .mapsPisah {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /* MAPSSSSSSS */
+    .newMaps {
+        background-color: #40382B;
+        display: flex;
+        flex-direction: row;
+    }
+
+
     /* Buy Now */
     .wrapper-buy #background .gambar img{
         margin-left: 20px;
