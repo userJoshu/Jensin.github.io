@@ -119,3 +119,64 @@
     width: 20vw;
     text-align: center;
 }
+
+.container-isi #gam3{
+    position: absolute;
+    margin-top: 10vw;
+    width: 30vw;
+    margin-left: 25vh;
+}
+
+.container-isi #gam4{
+    position: absolute;
+    margin-top: 10vw;
+    width: 30vw;
+    right: 25vh;
+}
+
+.container-isi #gam5{
+
+    /* display: none; */
+    position: absolute;
+    margin-top: 20vw;
+    width: 7vw;
+    margin-left: 15vh;
+}
+
+.container-isi #gam6{
+    /* display: none; */
+    position: absolute;
+    margin-top: 20vw;
+    width: 7vw;
+    right: 15vh;
+}
+
+.container-isi #wrapIsi3 .gambar31{
+    margin-top: 22vw;
+    margin-left: 70vh;
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    border: solid 7px;
+    border-radius: 20px;
+    border-color: #2D6895;
+    background-color: #fff;
+    /* opacity: 30%; */
+}
+
+
+.container-isi #wrapIsi3 .gambar31 h1{
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 25px;
+}
+
+
+.container-isi #wrapIsi3 .gambar31 p{
+    text-align: center;
+    margin-top: 3vh;
+    width: 27vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 14px;
+}
