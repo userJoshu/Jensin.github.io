@@ -4,11 +4,17 @@
     background-image: url("../assets/Character/backChar.png");
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
 }
 
 .wrapper img{
     margin: 50px;
-    /* position: absolute; */
     width: 25vw;
     display: flex;
 }
@@ -35,25 +41,33 @@
     /* margin-left: 40px; */
 }
 
+.wrapper .foto3 img{
+    margin-right: 0;
+}
+
 .wrapper .foto4{
     display: flex;
     justify-content: end;
     align-items: end;
 }
 
+.wrapper .foto4 img{
+    width: 400px;
+    margin-right: 0;
+}
+
 .wrapKata{
     position: absolute;
-    width: 500px;
+    width: auto;
+    height: 246.5px;
     top: 60%;
     left: 10%;
+    overflow: hidden;
     /* background: rgb(255, 3   8, 38); */
 }
 
-.wrapKata .kata {
-    /* top: 0; */
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 20px 20px 10px; 
+.wrapKata .kata img{
+    width: 500px;
 } 
 
 
@@ -787,4 +801,120 @@ input#card-32:checked ~ .KumpulanEropa{
     /* -webkit-transition: ease-out 1s; */
     -webkit-transition: ease-in-out 0.1s;
     width: 70px;
+}
+
+@media only screen and (max-width: 1040px){
+    .wrapper{
+        overflow-x: hidden;
+    }
+
+    .wrapper .foto1{
+        /* display: none; */
+    }
+
+    .wrapper .foto1 img{
+        margin-left: 0px;
+        margin-top: 200px;
+        width: 500px;
+    }
+
+    .wrapper .foto2{
+        /* display: none; */
+    }
+
+    .wrapper .foto2 img{
+        margin-top: 100px;
+        width: 450px;
+        transform: rotate(15deg);
+    }
+
+    .wrapper .foto3{
+        /* display: none; */
+    }
+
+    .wrapper .foto3 img{
+        margin-top: 100px;
+        width: 500px;
+    }
+
+    .wrapper .foto4{
+        /* display: none; */
+    }
+    .wrapper .foto4 img{
+        width: 500px;
+        margin-top: -150px;
+        transform: rotate(-15deg);
+    }
+
+    .wrapKata{
+        left: 5%;
+        right: 5%;
+        margin-top: 100px;
+        height: 446px;
+    }
+
+    .wrapKata .kata img{
+        width: 800px;
+    }
+    
+}
+
+@media only screen and (max-width: 395px){
+    .container-Jumbotron{
+        overflow: hidden;  
+    }
+
+    .wrapper{
+        overflow-x: hidden;
+    }
+
+    .wrapper .foto1{
+        /* display: none; */
+    }
+
+    .wrapper .foto1 img{
+        margin-left: -130px !important;
+        margin-top: 200px !important;
+        width: 300px !important;
+    }
+
+    .wrapper .foto2{
+        /* display: none; */
+    }
+
+    .wrapper .foto2 img{
+        margin-top: 100px ;
+        width: 250px !important;
+    }
+
+    .wrapper .foto3{
+        /* display: none; */
+    }
+
+    .wrapper .foto3 img{
+        margin-top: 240px !important;
+        width: 250px !important;
+        /* margin-left: 200px; */
+    }
+
+    .wrapper .foto4{
+        /* position: absolute; */
+        /* display: none; */
+    }
+    .wrapper .foto4 img{
+        width: 300px !important;
+        margin-top: -150px !important;
+        transform: rotate(-15deg);
+    }
+
+    .wrapKata{
+        left: 5%;
+        right: 5%;
+        margin-top: 100px;
+    }
+
+    .wrapKata .kata img{
+        width: 350px !important;
+    }
+    
 }
