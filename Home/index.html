@@ -19,7 +19,7 @@
 <body>
     
     <!-- NavBar -->
-    <nav id="hed">
+    <!-- <nav id="hed">
         <input type="checkbox" id="nav-toggle">
         <div class="logo">
             <img src="../assets/News/logo.png" alt="logo">
@@ -30,6 +30,10 @@
             <li> <a href="../Character/charachter.html">Characters</a></li>
             <li><a href="../Maps/maps.html">Maps</a></li>
             <li><a href="../About/about.html">About Game</a></li>
+
+            <div id="button">
+                <a href="../Regist/sign.html">Register</a>
+            </div>
             
         </ul>
     
@@ -39,10 +43,32 @@
             <div class="line"></div>
         </label>
     
-        <div id="button">
-            <a href="../Regist/sign.html">Register</a>
+        
+    </nav> -->
+
+    <!-- NAVBARRRR -->
+
+    <div class="navbar">
+
+        <div class="logo">
+            <img src="../assets/News/logo.png" alt="">
         </div>
-    </nav>
+
+        <ul class="links">
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Character/charachter.html">Characters</a></li>
+            <li><a href="../Maps/maps.html">Maps</a></li>
+            <li><a href="../About/about.html">About Game</a></li>
+        </ul>
+
+        <a href="../Regist/register.html">Register</a>
+
+
+
+    </div>
+
+    <!-- ############################## -->
+
 
 
     <section id="BodyPage">
@@ -146,20 +172,44 @@
 
     <!-- MAPSSSSS -->
 
-    <section class="newMaps">
+
+    <div class="newMaps">
 
         <div class="newMapsImg">
-            <h2>IMGG</h2>
+            <img id="imgMapChange" src="../assets/Maps/asiaMaps.png" alt="">
+            
         </div>
 
-        <div class="newMapsNav">
-            <h2>NAV</h2>
+        <div class="newMapsNavbar">
+            <nav class="newMapsNav">
+                <ul id="mapKlik">
+
+                    <li>
+                        <a class="active" onclick="changeImg('../assets/Maps/asiaMaps.png');">
+                                    Asia
+                        </a>
+                    </li>
+
+                    <li>
+                        <a onclick="changeImg('../assets/Maps/europeMaps.png');">
+                                    Europe
+                        </a>
+                    </li>
+
+                    <li>
+                        <a onclick="changeImg('../assets/Maps/africaMaps.png');">
+                                    Africa
+                        </a>
+                    </li>
+
+                    <!-- <li> <a href="#asiaMaps" class="active">Asia</a></li>
+                    <li> <a href="#europeMaps" >Europe</a></li>
+                    <li> <a href="#africaMaps" >Africa</a></li> -->
+                </ul>
+            </nav>
         </div>
-
-
-
-    </section>
-
+        
+    </div>
 
     <!-- Buy Now -->
     <section class="buyNow">
@@ -236,4 +286,5 @@
     </footer>
 
 </body>
+<script src="home.js"></script>
 </html>

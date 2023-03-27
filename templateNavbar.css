@@ -2,11 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none; border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: .2s linear;
-    color: black;
+    font-family: 'Jua';
 }
 
 /* body{
@@ -22,7 +18,6 @@
     width: 100%;
     left: 0px;
     right: 200px;
-    font-family: 'Jua';
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -47,11 +42,13 @@
 #hed .link{
     width: 100%;
     display: flex;
+    justify-content: left;
 }
 
 #hed .link li{
     width: 100%;
     list-style: none;
+    padding: 10px;
 }
 
 #hed .link li a{
@@ -106,7 +103,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     body{
         overflow-x: hidden;
     }
