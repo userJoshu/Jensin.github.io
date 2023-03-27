@@ -1,5 +1,8 @@
-body {
+
+.wrapperMaps{
     background: url(../assets/Maps/bgMaps.png);
+    width: 100%;
+    height: 120vh;
 }
 
 .isiMap {
@@ -10,7 +13,7 @@ body {
     margin-bottom: 100px;
 }
 
-                /* GAMBAR & DESCRIPTION MAPS */
+/* GAMBAR & DESCRIPTION MAPS */
 
 .isiAtas {
     margin-top: 150px;
@@ -102,4 +105,10 @@ body {
     color: #386B42;
     padding: 8px 25px;
     border-radius: 100px;
+}
+
+@media only screen and (max-width: 1040px){
+    .wrapperMaps{
+        height: 50vh;
+    }
 }

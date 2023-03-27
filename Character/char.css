@@ -820,6 +820,239 @@ input#card-32:checked ~ .KumpulanEropa{
         width: 800px;
     }
     
+    /* ASIA */
+
+    .headCharAsia img{
+        width: 30%;
+        margin: 10%;
+    }
+
+    .AsiaGambar{
+        /* display: none; */
+        width: 100vw;
+        height: 40vh;
+        /* background-color: red; */
+    }
+
+    .card{
+        width: 70%;
+        height: 150%;
+    }
+
+    .card .backAs .title{
+        font-size: 300px;
+    }
+
+    .cardImage .cardImg{
+        width: 150%;
+        height: 140%;
+    }
+
+    .card .charName{
+        width: 60%;
+        height: 80%;
+        padding-left: 10%;
+        /* background-color: red; */
+    }
+
+    .card .charName .name1{
+        font-size: 100px;
+    }
+
+    .card .charName .name2{
+        font-size: 30px;
+    }
+
+    .wepon{
+        width: 70%;
+        /* background-color: red; */
+    }
+
+    .wepon .weponImg1 , .wepon .weponImg2 ,.wepon .weponImg3{
+        width: 40%;
+    }
+
+    .wepon .weponImg1:hover, .wepon .weponImg2:hover,.wepon .weponImg3:hover{
+        width: 45%;
+    }
+
+    .wrapper-pindah{
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper-asia .AsiaGambar .pindahGambarAsia{
+        margin-top: 30%;
+        left: 10%;
+    }
+
+    .wrapper-asia .AsiaGambar .pindahGambarAsiaCad{
+        margin-top: 25%;
+        left: 10%;
+    }
+
+    .wrapper-asia .wrapper-pindah label .pinAsia{
+        width: 50%;
+    }
+
+    /* AFRIKA */
+
+    .headCharAfrika img{
+        width: 30%;
+        margin: 10%;
+    }
+
+    .AfrikaGambar{
+        /* display: none; */
+        width: 100vw;
+        height: 40vh;
+        /* background-color: red; */
+    }
+
+    .card1{
+        width: 70%;
+        height: 150%;
+    }
+
+    .card1 .backAf .title{
+        font-size: 300px;
+    }
+
+    .card1 .backAf #kukus{
+        font-size: 250px;
+    }
+
+    .card1 .backAf #yuna{
+        font-size: 250px;
+    }
+
+    .card1 .cardImage .cardImg{
+        width: 150%;
+        height: 140%;
+        /* background-color: red; */
+    }
+
+    .card1 .charName{
+        width: 60%;
+        height: 80%;
+        padding-left: 10%;
+        /* background-color: red; */
+    }
+
+    .card1 .charName .name1{
+        font-size: 100px;
+    }
+
+    .card1 .charName .name2{
+        font-size: 30px;
+    }
+
+    .card1 .wepon{
+        width: 70%;
+        /* background-color: red; */
+    }
+
+    .card1 .wepon .weponImg1 , .card1 .wepon .weponImg2 ,.card1 .wepon .weponImg3{
+        width: 40%;
+    }
+
+    .card1 .wepon .weponImg1:hover, .card1 .wepon .weponImg2:hover,.card1 .wepon .weponImg3:hover{
+        width: 45%;
+    }
+
+    .wrapper-pindah{
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper-afrika .AfrikaGambar .pindahGambarAfrika{
+        margin-top: 30%;
+        left: 10%;
+    }
+
+    .wrapper-afrika .AfrikaGambar .pindahGambarAfrikaCad{
+        margin-top: 25%;
+        left: 10%;
+    }
+
+    
+    .wrapper-pindah label .pinAfrika{
+        width: 50% !important;
+    }
+
+    /* EROPA */
+
+    .headCharEropa img{
+        width: 30%;
+        margin: 10%;
+    }
+
+    .EropaGambar{
+        /* display: none; */
+        width: 100vw;
+        height: 40vh;
+        /* background-color: red; */
+    }
+
+    .card2{
+        width: 70%;
+        height: 150%;
+    }
+
+    .card2 .backEr .title{
+        font-size: 300px;
+    }
+
+    .card2 .cardImage .cardImg{
+        width: 150%;
+        height: 140%;
+    }
+
+    .card2 .charName{
+        width: 60%;
+        height: 80%;
+        padding-left: 10%;
+        /* background-color: red; */
+    }
+
+    .card2 .charName .name1{
+        font-size: 100px;
+    }
+
+    .card2 .charName .name2{
+        font-size: 30px;
+    }
+
+    .card2 .wepon{
+        width: 70%;
+        /* background-color: red; */
+    }
+
+    .card2 .wepon .weponImg1 ,.card2 .wepon .weponImg2 ,.card2 .wepon .weponImg3{
+        width: 40%;
+    }
+
+    .card2 .wepon .weponImg1 ,.card2 .wepon .weponImg2 ,.card2 .wepon .weponImg3{
+        width: 45%;
+    }
+
+    .EropaGambar .wrapper-pindah{
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapper-eropa .EropaGambar .pindahGambarEropa{
+        margin-top: 30%;
+        left: 10%;
+    }
+    .wrapper-eropa .EropaGambar .pindahGambarEropaCad{
+        margin-top: 25%;
+        left: 10%;
+    }
+
+    .wrapper-eropa .wrapper-pindah label .pinEropa{
+        width: 50% !important;
+    }
 }
 
 @media only screen and (max-width: 395px){
@@ -868,17 +1101,17 @@ input#card-32:checked ~ .KumpulanEropa{
 
 .headCharAsia img{
     margin: 50px;
-    width: 30%;   
+    width: 30% ;   
 }
 
 .AsiaGambar{
-    width: 100vw;
+    width: 100vw ;
 }
 
 .card{
     margin-left: 15%;
-    width: 70% ;
-    height: 90%;
+    width: 70% !important;
+    height: 90% !important;
 }
 
 .card .back-char{
@@ -896,8 +1129,8 @@ input#card-32:checked ~ .KumpulanEropa{
 
 .cardImage .cardImg{
     margin-left: 1%;
-    width: 90%;
-    height: 80%;
+    width: 90% !important;
+    height: 80% !important;
     /* background-color: black; */
 }
 
@@ -906,11 +1139,19 @@ input#card-32:checked ~ .KumpulanEropa{
     height: 100%;
     margin-left: 50%;
     margin-top: 5%;
+    padding-left: 0%;
+
     /* background-color: red; */
 }
 
 .card .charName .name1{
-    margin-bottom: 0;
+    margin-bottom: 0 ;
+    font-size: 50px;
+}
+
+.card .charName .name2{
+    margin-left: 2%;
+    font-size: 18px;
 }
 
 .wepon{
@@ -947,7 +1188,7 @@ input#card-32:checked ~ .KumpulanEropa{
 }
 
 .wrapper-pindah label .pinAsia{
-    width: 80%;
+    width: 80% !important;
 }
 
 /* AFRIKA */
@@ -973,9 +1214,9 @@ input#card-32:checked ~ .KumpulanEropa{
 }
 
 .card1 .backAf #kukus{
-    margin-top: 20%;
-    margin-left: 2%;
-    font-size: 650%;
+    margin-top: 20% ;
+    margin-left: 2% ;
+    font-size: 650% ;
 }
 
 .card1 .backAf #yuna{
@@ -994,13 +1235,18 @@ input#card-32:checked ~ .KumpulanEropa{
 .card1 .charName{
     width: 100%;
     height: 100%;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-top: 5%;
     /* background-color: red; */
 }
 
 .card1 .charName .name1{
     margin-bottom: 0;
+    font-size: 50px;
+}
+
+.card1 .charName .name2{
+    font-size: 18px;
 }
 
 .card1 .charName #kuk{
@@ -1042,7 +1288,7 @@ input#card-32:checked ~ .KumpulanEropa{
 }
 
 .wrapper-pindah label .pinAfrika{
-    width: 80%;
+    width: 80% !important;
 }
 
 /* EROPA */
@@ -1077,13 +1323,19 @@ input#card-32:checked ~ .KumpulanEropa{
 .card2 .charName{
     width: 100%;
     height: 100%;
-    margin-left: 50%;
+    margin-left: 45%;
     margin-top: 5%;
     /* background-color: red; */
 }
 
 .card2 .charName .name1{
     margin-bottom: 0;
+    font-size: 50px;
+}
+
+.card2 .charName .name2{
+    margin-left: 0%;
+    font-size: 18px;
 }
 
 .card2 .wepon{
@@ -1109,17 +1361,17 @@ input#card-32:checked ~ .KumpulanEropa{
 }
 
 .wrapper-eropa .EropaGambar .pindahGambarEropa{
-    margin-top: 50%;
+    margin-top: 50% !important;
     left: 2%;
     /* background-color: blue; */
 }
 
 .wrapper-eropa .EropaGambar .pindahGambarEropaCad{
     left: 2%;
-    margin-top: 40%;
+    margin-top: 40% !important;
 }
 
-.wrapper-pindah label .pinEropa{
-    width: 80%;
+.wrapper-eropa .wrapper-pindah label .pinEropa{
+    width: 80% !important;
 }
 }
