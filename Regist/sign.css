@@ -6,18 +6,24 @@
 
 body{
     min-height: 100vh;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     background: url("../assets/register/regBack.png");
     background-position: center;
     background-size: cover;
 }
 
+.container-Sign {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+
 .split{
     height: 100%;
     width: 50%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
@@ -67,6 +73,7 @@ body{
 .wrapper{
     position: relative;
     max-width: 470px;
+    margin-top: 10%;
     width: 100%;
     border-radius: 12px;
     padding: 20px 30px 120px;
@@ -78,7 +85,7 @@ body{
 .form.Login{
     position: absolute;
     left: 50%;
-    bottom: -83%;
+    bottom: -88%;
     transform: translateX(-50%);
     width: calc(100% + 220px);
     padding: 20px 140px;
@@ -89,7 +96,7 @@ body{
 }
 
 .wrapper.active .form.Login{
-    bottom: -13%;
+    bottom: -12%;
     border-radius: 25%;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -202,4 +209,53 @@ form input[type="number"]::-webkit-inner-spin-button,  input[type ="number"]::-w
     color: #fff;
     background: #FF3B39;
     border: none;
+}
+
+
+.popup {
+    width: 400px;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    border: 4px solid black;
+    text-align: center;
+    padding: 20px;
+    transform: matrix3d();
+    visibility: hidden;
+}
+
+.open-popup {
+    visibility: visible;
+}
+
+.popup p {
+    /* color: #40382B; */
+}
+
+.popup #okButton {
+    background: #FF3B39;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 2px solid black;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.popup #okButton:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+#buttonSubmit {
+    margin-top: 15px;
+    background: #FF3B39;
+    color: #fff;
+    padding: none;
+    font-size: 18px;
+    /* font-weight: 600; */
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
 }

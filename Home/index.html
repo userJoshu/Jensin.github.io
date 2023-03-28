@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Lexend+Deca:wght@800&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="slide.css">
     <link type="text/css" rel="stylesheet" href="../Tempalte.css"> 
     <link rel="stylesheet" href="../templateNavbar.css">
 
@@ -92,19 +93,53 @@
                     <a href="../News/news.html"><img src="../assets/newsHead.png"></a>
                     
                 </div>
-                <div class="slideFrame"> 
-                    <div class="slideImages">   
-                        <div class="img1">
-                            <img src="../assets/NewsSlide.png">
-                        </div>
-                        <div class="img1">
-                            <img src="../assets/NewsSlide.png">
-                        </div>
-                        <div class="img1">
-                            <img src="../assets/NewsSlide.png">
-                        </div>
+                <div id="slider">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <div id="slides">
+                       <div id="overflow">
+                          <div class="inner">
+                             <div class="slide slide_1">
+                                <div class="slide-content">
+                                   <img src="../assets/NewsSlide.png" alt="">
+                                </div>
+                             </div>
+                             <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <img src="../assets/NewsSlide.png" alt="">
+            
+                                </div>
+                             </div>
+                             <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <img src="../assets/NewsSlide.png" alt="">
+            
+                                </div>
+                             </div>
+                             <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <img src="../assets/NewsSlide.png" alt="">
+            
+                                </div>
+                             </div>
+                          </div>
+                       </div>
                     </div>
-                </div>
+                    <div id="controls">
+                       <label for="slide1"></label>
+                       <label for="slide2"></label>
+                       <label for="slide3"></label>
+                       <label for="slide4"></label>
+                    </div>
+                    <div id="bullets">
+                       <label for="slide1"></label>
+                       <label for="slide2"></label>
+                       <label for="slide3"></label>
+                       <label for="slide4"></label>
+                    </div>
+                 </div>
                 <div class="aset">
                     <img src="../assets/dino.png">
                 </div>

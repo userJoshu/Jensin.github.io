@@ -57,22 +57,53 @@
                 </div>
             </section>
         </div>
-        <div class="split right">
+
+
+
+        <div class="split right">    
             <section class="wrapper">
                 <div class="form signUp">
                     <header>Signup</header>
-                    <form action="#" >
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email">
-                        <input type="number" placeholder="Age">
-                        <input type="password" placeholder="Create Password">
-                        <div class="checkBox">
-                            <input type="checkbox" id="signupCheck">
-                            <label for="signupCheck">I agree to the TGR Company User Agreement</label>
+
+                    <form id="#">
+                        <table>
+                            <tr>
+                                <input type="text" placeholder="Full Name" name="inputText" id="inputText">
+                            </tr>
+
+                            <tr>
+                                <input type="email" placeholder="Email" name="inputEmail" id="inputEmail">
+                            </tr>
+                          
+                            <tr>
+                                <input type="number" placeholder="Age" name="inputNumber" id="inputNumber">
+                            </tr>
+
+                            <tr>
+                                <input type="password" placeholder="Password" name="inputPassword" id="inputPassword">
+                            </tr>
+
+                            <tr>
+                                <input type="password" placeholder="Confirm Password" name="confirmPassword" id="confirmPassword">
+                            </tr>
+
+                            <div class="checkBox">
+                                <input type="checkbox" id="signupCheck">
+                                <label for="signupCheck">I agree to the TGR Company User Agreement</label>
+                            </div>
+
+                        </table>
+                        <button id="buttonSubmit">Submit</button>
+                        <div id="divError"></div>
+
+                        <div class="popup" id="popup">
+                            <h2>Welcome to Jenshin IMpekz!</h2>
+                            <p>Your account has been successfully registered!</p>
+                            <button type="button" id="okButton" onclick="openLogin()"> OK </button>
                         </div>
-                        <input type="submit" value="Signup" >
-        
-                    </form>
+
+                      </form>
+
                 </div>
 
                 <div class="form Login">
@@ -80,7 +111,7 @@
                     <form action="../Home/index.html">
                         <input type="email" placeholder="Email">
                         <input type="password" placeholder="Input Password">
-                        <a href="#">Forgot password?</a>
+                        <a href="#" onclick="openSignup(); closePopup()">Forgot password?</a>
                         <input type="submit" value="Login">
         
                     </form>
@@ -136,3 +167,19 @@
 </body>
 <script src="sign.js"></script>
 </html>
+
+
+
+<!-- <form action="#" >
+    <input type="text" placeholder="Full Name" id="inputText">
+    <input type="email" placeholder="Email">
+    <input type="number" placeholder="Age">
+    <input type="password" placeholder="Create Password">
+    <div class="checkBox">
+        <input type="checkbox" id="signupCheck">
+        <label for="signupCheck">I agree to the TGR Company User Agreement</label>
+    </div>
+    <button id="buttonSubmit">submit</button>
+    <input type="submit" value="Signup" id="buttonSubmit">
+
+</form> -->

@@ -57,67 +57,17 @@ body{
 
 .aset{
     margin: 20px;
+    margin-top: -120px;
     padding: 5px 90px 10px 90px;
     position: absolute;
 }
 
 .aset img{
+    position: absolute;
     width: 100px;
 }
 
 /* Slider dari isi News */
-
-.slideFrame{
-    height: 516px; 
-    width: 845px;
-    overflow: hidden;
-    /* height: 800px; */
-    /* width: 1200px; */
-    margin-left: 70px;
-    /* margin-top: 90px; */
-    /* background-color: green; */
-}
-
-@-webkit-keyframes slide_animation{
-    0%{left: 0px;}
-    10%{left: 0px;}
-    20%{left: 1500px;}
-    30%{left: 1500px;}
-    40%{left: 1500px;}
-    50%{left: 1500px;}
-    60%{left: 1500px;}
-    70%{left: 1500px;}
-    80%{left: 0px;}
-    90%{left: 0px;}
-    100%{left: 0px;}
-}
-
-.slideImages{
-    margin-top: 1000px;
-    width: 10900px;
-    height: 400px;
-    margin: 0 0 0 -2400px;
-    position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 13s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
-    /* background-color: grey; */
-}
-
-.img1{
-    height: 400px;
-    width: 1000px;
-    position: relative;
-    float: left;
-    /* background-color: red; */
-}
- 
-.img1 img{
-    width: 630px;
-}
-
 
 /* #######################################3 */
 /* New Character */
