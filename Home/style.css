@@ -549,23 +549,23 @@ body{
     }
     #jumbotron1{
         width: calc(100% + 0vw);
-        height: 70vh;
+        height: 100%;
     }
 
     #jumbotron1 img{
         margin-left: 10px;
         margin-top: 250px;
         margin-bottom: 150px;
-        width: 200px !important;
+        width: 70% !important;
     }
 
     /* News */
     #title img{
-        width: 150px !important;
+        width: 30% !important;
         justify-content: center;
-        margin-left: 50px;
-        margin-top: 50px;
-        margin-bottom: 20px;
+        margin-left: 10%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
     .aset img{
@@ -578,10 +578,10 @@ body{
     .headChar img{
         box-sizing: border-box;
         /* margin: 50px; */
-        margin-left: 20px;
-        margin-top: 50px;
+        margin-left: 10%;
+        margin-top: 10%;
         /* padding: 20px 10px 20px 10px; */
-        width: 220px;
+        width: 40%;
     }
 
     .wraperChar{
@@ -590,16 +590,16 @@ body{
     }
 
     .newChar{
-        margin-left: -30px;
-        margin-top: -30px;
+        margin-left: -5%;
+        margin-top:0%;
         width: auto;
         /* margin: 50px; */
     }
     
     .newChar #circle{
         margin-top: 0;
-        margin-left: 120px;
-        width: 200px;
+        margin-left: 30%;
+        width: 55%;
         background: url("../assets/Home/newCharGam.png"), #F6CB5C;
         background-position: center;
         border-radius: 100%;
@@ -610,8 +610,8 @@ body{
     
     
     .newChar #circle:hover{
-        margin-left: 120px;
-        width: 200px;
+        margin-left: 30%;
+        width: 60%;
         /* background-image: url("assets/newCharAf.png"); */
         background: url("../assets/Home/newCharGam.png"), #F6CB5C;
         background-position: center;
@@ -620,9 +620,9 @@ body{
     }
 
     .leftWrite{
-        margin-top: 40px;
-        margin-left: 50px;
-        margin-right: 40px;
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .leftWrite h1{
         font-size: 15px;
@@ -632,17 +632,15 @@ body{
     }
     .toCharacter{
         display: block;
-        width: 600px;
-        margin-top: 90px;
-        margin-left: -300px;
+        width: 160%;
+        margin-top: 20%;
+        margin-left: -80%;
     }
     .wraperChar #borderChar{
-        width: 300px;
+        width: 100%;
     }
     .toCharacter :hover{ 
-        border: 4px solid #463D2C;
-    }
-    .toCharacter a:hover{
+        border: 10% solid #463D2C;
     }
 
     /* Maps */
@@ -678,7 +676,7 @@ body{
     }
 
     .newMapsNav #mapKlik li a:hover,.newMapsNav #mapKlik li a.active{
-        padding: 8px 10px;
+        padding: 10% 2%;
         border-radius: 100px;
         background-color: white;
         color: #386B42;
@@ -686,37 +684,37 @@ body{
 
     /* Buy Now */
     .wrapper-buy #background .gambar img{
-        margin-left: 20px;
-        width: 150px;
+        margin-left: 5%;
+        width: 38%;
     }
     .wrapper-buy #background .belakang{
-        left: 55px;
-        width: 300px;
-        height: 20vh;
-        margin-top: -145px;
+        left: 14%;
+        width: 77%;
+        height: 20%;
+        margin-top: -36%;
     }
     .wrapper-buy #background .belakang img{
         display: none;
     }
 
     .wrapper-buy #background .belakang h1{
-        width: 140px;
-        margin-left: 20px;
+        width: 40%;
+        margin-left: 5%;
         font-size: 15px;
         text-align: center;
     }
     .wrapper-buy #background .bawah img{
         position: absolute;
-        width: 300px;
-        height: 90px;
-        margin-top:10px;
-        margin-left: -140px;
+        width: 77%;
+        height: 12%;
+        margin-top:1%;
+        margin-left: -36%;
     }
     
     .wrapper-buy #background .bawahIsi h1{
-        width: 240px;
-        margin-top: 40px;
-        margin-left: -110px;
+        width: 60%;
+        margin-top: 10%;
+        margin-left: -30%;
         font-weight: lighter;
         font-size: 12px;
         text-align: center;
@@ -733,8 +731,8 @@ body{
 
     .buyButton{
         position: absolute;
-        margin-top: 280px;
-        margin-left: -50px;
+        margin-top: 90%;
+        margin-left: -15%;
     }
 }
 
