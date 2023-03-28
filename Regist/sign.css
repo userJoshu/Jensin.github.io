@@ -5,7 +5,8 @@
 }
 
 body{
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    width: 100%;
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -272,4 +273,35 @@ form input[type="number"]::-webkit-inner-spin-button,  input[type ="number"]::-w
     border-radius: 10px;
     border: none;
     padding: 5px;
+}
+
+@media only screen and (max-width: 1040px){
+    .container-Sign{
+        width: 100%;
+        height: 85vh;
+    }
+
+    .split.left{
+        display: none;
+    }
+
+    .split{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .split .wrapper{
+        
+        height: 60%;
+    }
+
+    footer {
+        margin-top: -30%;
+    }
+
+
+
+
 }

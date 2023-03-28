@@ -666,7 +666,7 @@ body{
     .newMapsNav #mapKlik::after{
         display: none;
     }
-
+   
     .newMapsNav #mapKlik li a:before{
         display: none;
         /* margin-left: 10%; */
