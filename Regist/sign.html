@@ -63,7 +63,7 @@
         <div class="split right">    
             <section class="wrapper">
                 <div class="form signUp">
-                    <header>Signup</header>
+                    <header>Register</header>
 
                     <form id="#">
                         <table>
@@ -108,11 +108,17 @@
 
                 <div class="form Login">
                     <header>Login</header>
-                    <form action="../Home/index.html">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Input Password">
+                    <form action="#">
+                        <input type="email" placeholder="Email" name="inputEmail" id="inputEmailLogin">
+
+                        <input type="password" placeholder="Password" name="inputPassword" id="inputPasswordLogin">
+
                         <a href="#" onclick="openSignup(); closePopup()">Forgot password?</a>
-                        <input type="submit" value="Login">
+
+                        <button id="buttonLogin">Login</button>
+                        <div id="divErrorLogin"></div>
+
+                        <!-- <input type="submit" value="Login"> -->
         
                     </form>
                 </div>

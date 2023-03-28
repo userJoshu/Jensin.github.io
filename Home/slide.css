@@ -128,3 +128,37 @@
        margin: 0 auto;
     }
  }
+
+ @media only screen and (max-width: 1040px){
+   #slides{
+      margin-top: -7%;
+   }
+
+   #overflow{
+      height: 35vh;
+   }
+ }
+
+ @media only screen and (max-width: 391px){
+   #slider{
+      width: 100%;
+   }
+   
+   #slides{
+      width: 100% !important;
+      height: 4% !important;
+      margin-top: -10%;
+   }
+
+   #overflow{
+      width: 250px;
+      height: 200px;
+   }
+
+   .slide img{
+      margin-top: -100px;
+      width: 240px;
+   }
+
+   
+ }

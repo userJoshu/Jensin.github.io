@@ -11,7 +11,8 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="slide.css">
     <link type="text/css" rel="stylesheet" href="../Tempalte.css"> 
-    <link rel="stylesheet" href="../templateNavbar.css">
+    <link type="text/css" rel="stylesheet" href="newNavbar.css">
+    <!-- <link rel="stylesheet" href="../templateNavbar.css"> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jenshin IMpekz - Home</title>
@@ -20,7 +21,48 @@
 <body>
     
     <!-- NavBar -->
-    <nav id="hed">
+
+    <!-- New navbar -->
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../assets/News/logo.png" alt="">
+            </div>
+
+            <ul class="links">
+                <li><a href="../Home/index.html">Home</a></li>
+                <li><a href="../Character/charachter.html">Characters</a></li>
+                <li><a href="../Maps/maps.html">Maps</a></li>
+                <li><a href="../About/about.html">About Game</a></li>
+
+            </ul>
+
+            <a href="../Regist/sign.html" class="action_btn">Register</a>
+
+            <div class="toggle_btn">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <!-- *********************** -->
+
+
+
+
+
+    <!-- <nav id="hed">
         <input type="checkbox" id="nav-toggle">
         <div class="logo">
             <img src="../assets/News/logo.png" alt="logo">
@@ -32,11 +74,13 @@
             <li><a href="../Maps/maps.html">Maps</a></li>
             <li><a href="../About/about.html">About Game</a></li>
 
-            <div id="button">
-                <a href="../Regist/sign.html">Register</a>
-            </div>
+            <li><a href="../Regist/sign.html">Register</a></li> -->
+
+            <!-- <div id="button"> -->
+                <!-- <a href="../Regist/sign.html">Register</a> -->
+            <!-- </div> -->
             
-        </ul>
+        <!-- </ul>
     
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
@@ -45,7 +89,7 @@
         </label>
     
         
-    </nav>
+    </nav> -->
 
     <!-- NAVBARRRR -->
 
@@ -173,78 +217,49 @@
         </div>
     </section>
 
-    <!-- Maps -->
-    <!-- <section class="containerMaps">
-        <div class="maps">
-            <div class="background">
-                <div id="mapsHead">
-                    <img src="../assets/mapsHead.png">
-                </div>
-            </div>
-            <div class="wrap"> 
-                <div class="mapsPisah">
-                    <div class="slideImage">
-                        <span id="slide-1"></span>
-                        <span id="slide-2"></span>
-                        <span id="slide-3"></span>
-    
-                        <div class="slide">
-                            <img src="../assets/Maps/asiaMaps.png" alt="" class="imgAsia">
-                            <img src="../assets/Maps/europeMaps.png" alt="" class="imgEropa">
-                            <img src="../assets/Maps/africaMaps.png" alt="" class="imgAfrika">
-                        </div>
-                    </div>
-                    <div class="navigation">
-                        <a href="#slide-1">1</a>
-                        <a href="#slide-2">2</a>
-                        <a href="#slide-3">3</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
     <!-- MAPSSSSS -->
 
-
-    <div class="newMaps">
-
-        <div class="newMapsImg">
-            <img id="imgMapChange" src="../assets/Maps/asiaMaps.png" alt="">
+    <section class="containerMaps">
+        <div class="newMaps">
+            <div class="MapsHead">
+                <img src="../assets/Home/mapsHead.png" alt="">
+            </div>
+            <div class="newMapsImg">
+                <img id="imgMapChange" src="../assets/Maps/asiaMaps.png" alt="">
+                
+            </div>
+    
+            <div class="newMapsNavbar">
+                <nav class="newMapsNav">
+                    <ul id="mapKlik">
+    
+                        <li>
+                            <a class="active" onclick="changeImg('../assets/Maps/asiaMaps.png');">
+                                        Asia
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a onclick="changeImg('../assets/Maps/europeMaps.png');">
+                                        Europe
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a onclick="changeImg('../assets/Maps/africaMaps.png');">
+                                        Africa
+                            </a>
+                        </li>
+    
+                        <!-- <li> <a href="#asiaMaps" class="active">Asia</a></li>
+                        <li> <a href="#europeMaps" >Europe</a></li>
+                        <li> <a href="#africaMaps" >Africa</a></li> -->
+                    </ul>
+                </nav>
+            </div>
             
         </div>
-
-        <div class="newMapsNavbar">
-            <nav class="newMapsNav">
-                <ul id="mapKlik">
-
-                    <li>
-                        <a class="active" onclick="changeImg('../assets/Maps/asiaMaps.png');">
-                                    Asia
-                        </a>
-                    </li>
-
-                    <li>
-                        <a onclick="changeImg('../assets/Maps/europeMaps.png');">
-                                    Europe
-                        </a>
-                    </li>
-
-                    <li>
-                        <a onclick="changeImg('../assets/Maps/africaMaps.png');">
-                                    Africa
-                        </a>
-                    </li>
-
-                    <!-- <li> <a href="#asiaMaps" class="active">Asia</a></li>
-                    <li> <a href="#europeMaps" >Europe</a></li>
-                    <li> <a href="#africaMaps" >Africa</a></li> -->
-                </ul>
-            </nav>
-        </div>
-        
-    </div>
+    </section>
 
     <!-- Buy Now -->
     <section class="buyNow">

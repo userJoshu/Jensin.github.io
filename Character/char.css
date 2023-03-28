@@ -59,7 +59,8 @@
 .wrapKata{
     position: absolute;
     width: auto;
-    height: 246.5px;
+    height: 40%;
+    /* background-color: red; */
     top: 60%;
     left: 10%;
     overflow: hidden;
@@ -67,7 +68,7 @@
 }
 
 .wrapKata .kata img{
-    width: 500px;
+    width: 70%;
 } 
 
 

@@ -130,4 +130,8 @@ body{
         margin-bottom: 50px;
     }
 
+    #fot ul{
+        padding: 0;
+    }
+
 }

@@ -75,6 +75,8 @@ body{
     width: 100%;
     height: 750px;
     background-image: url("../assets/backNewChar.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .headChar{
@@ -189,25 +191,41 @@ body{
 /* #######################################3 */
 
 /* Maps */
+
+
+
 #mapKlik {
     list-style: none;
 }
 
+.containerMaps{
+    width: 100%;
+    height: 750px;
+
+    background: url('../assets/Maps/bgMaps.png');
+    background-size: cover;
+    background-position: center;
+}
 
 .newMaps {
-    background: url('../assets/Maps/bgMaps.png');
     content: "";
     display: table;
     clear: both;
-    width: 100%;
+    
 }
 
 .newMapsImg {
     margin-left: 150px;
-    margin-top: 100px;
+    margin-top: 4%;
     float: left;
     width: 50%;
     padding: 10px;
+}
+
+
+.newMaps .MapsHead img{
+    margin-top: 5%;
+    width: 100%;
 }
 
 .newMapsNavbar {
@@ -223,7 +241,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
     margin-left: 150%;
-    margin-top: -50;
+    margin-top: -50%;
 }
 
 .newMapsNav #mapKlik {
@@ -484,8 +502,20 @@ body{
 
     /* MAPS */
     .containerMaps{
-        height: 50vh;
+        height: 55vh;
     }
+
+    .newMapsImg img{
+        margin-top: 7%;
+        margin-left: -15%;
+        width: 130%;
+    }
+    
+    .newMapsNav{
+        margin-top: -50%;
+        margin-left: 150%;
+    }
+
     /* Buy Now */
     .wrapper-buy{
         height: 50vh;
@@ -530,25 +560,18 @@ body{
     }
 
     /* News */
-    .slideImages .img1 img{
-        width: 300px;
-    }
     #title img{
-        width: 150px;
+        width: 150px !important;
         justify-content: center;
         margin-left: 50px;
         margin-top: 50px;
         margin-bottom: 20px;
     }
+
     .aset img{
-        width: 0;
-    }
-    .slideFrame{
-        display: none;
-    }
-    .slideImages{
-        display: none;
-        height: 200px;
+        margin-top: 50%;
+        margin-left: -20%;
+        width: 40%;
     }
 
     /* New Character */
@@ -623,25 +646,43 @@ body{
     }
 
     /* Maps */
-    .wrap{
+ 
+    .newMapsImg img{
+        margin-top: 20%;
+        margin-left: -55%;
+        width: 150%;
+    }
+
+    .newMapsNav{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    .newMapsNav #mapKlik{
+        width: 10%;
+        display: flex;
+    }
+
+    .newMapsNav #mapKlik::after{
         display: none;
     }
 
-    .mapsPisah {
-        display: flex;
-        flex-direction: row;
+    .newMapsNav #mapKlik li a:before{
+        display: none;
+        /* margin-left: 10%; */
+        /* margin-top: -200%; */
+    }    
+
+    .newMapsNav #mapKlik li a{
+        font-size: 100%;
     }
 
-
-    /* MAPSSSSSSS */
-    /* .newMaps {
-        background-color: #40382B;
-        display: flex;
-        flex-direction: row;
-    } */
-
-    
-    
+    .newMapsNav #mapKlik li a:hover,.newMapsNav #mapKlik li a.active{
+        padding: 8px 10px;
+        border-radius: 100px;
+        background-color: white;
+        color: #386B42;
+    }
 
     /* Buy Now */
     .wrapper-buy #background .gambar img{

@@ -9,6 +9,7 @@ LoginHeader.addEventListener("click",() => {
 
 signUpHeader.addEventListener("click",() => {
     wrapper.classList.remove("active");
+    closePopup();
 })
 
 
@@ -36,6 +37,7 @@ const inputGenderMale = document.getElementById("inputRadioMale")
 const inputGenderFemale = document.getElementById("inputRadioFemale")
 const buttonSubmit = document.getElementById("buttonSubmit")
 const divError = document.getElementById("divError")
+
 
 const asynchronous = document.getElementById("asynchronous")
 
@@ -141,4 +143,45 @@ buttonSubmit.addEventListener("click", (event)=>{
 
 
 
+// LOGIN
 
+const inputEmailLogin = document.getElementById("inputEmailLogin")
+const inputPasswordLogin = document.getElementById("inputPasswordLogin")
+const divErrorLogin = document.getElementById("divErrorLogin")
+
+
+buttonLogin.addEventListener("click", (event)=>{
+    event.preventDefault();
+
+    var errorTextLogin = "";
+
+
+    //Password validation
+    //-> must contain minimal 8 characters
+    const password = inputPasswordLogin.value
+
+    if(password.length < 8)
+    {
+        errorTextLogin = "Password must be at least 8 characters long!"
+    }
+
+            
+    //Email validation
+    //-> must contain @gmail.com
+    const email = inputEmailLogin.value
+
+    if(!email.includes("@gmail.com") || email.length <= 10)
+    {
+        errorTextLogin = "Email should end with @gmail.com!"
+    }
+
+        
+        if(errorTextLogin == "")
+        {
+            // alert("yes");
+            window.location.href = "../Home/index.html";
+        }
+
+    divErrorLogin.innerText = errorTextLogin
+}
+)

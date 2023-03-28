@@ -259,3 +259,17 @@ form input[type="number"]::-webkit-inner-spin-button,  input[type ="number"]::-w
     border: none;
     padding: 5px;
 }
+
+
+#buttonLogin {
+    margin-top: 15px;
+    background: #FF3B39;
+    color: #fff;
+    padding: none;
+    font-size: 18px;
+    /* font-weight: 600; */
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
