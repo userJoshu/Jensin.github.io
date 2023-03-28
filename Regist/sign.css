@@ -300,8 +300,11 @@ form input[type="number"]::-webkit-inner-spin-button,  input[type ="number"]::-w
     footer {
         margin-top: -30%;
     }
+}
 
-
-
-
+@media only screen and (max-width: 391px){
+    .container-Sign{
+        width: 100%;
+        height: 135vh;
+    }
 }

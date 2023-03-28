@@ -42,7 +42,7 @@ header {
     gap: 50px;
 }
 
-.navbar .toggle_btn .line{
+.navbar .toggleButton .line{
     width: 30px;
     height: 5px;
     background-color: #000;
@@ -51,5 +51,12 @@ header {
     cursor: pointer;
 }
 
-.navbar
+.actionButton {
+    background-color: #FDF3AC;
+    color: #2B2B2B;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+
 
