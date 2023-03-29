@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Lexend+Deca:wght@800&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../Tempalte.css"> 
-    <link rel="stylesheet" href="../templateNavbar.css">    
+    <link rel="stylesheet" href="../newNavbar.css">    
     <link rel="stylesheet" href="sign.css">
     <title>Jenshin IMpekz-Register</title>
 </head>
@@ -14,31 +14,42 @@
 
 <body >
     
-    <nav id="hed">
+    <!-- NavBar -->
 
-        <input type="checkbox" id="nav-toggle">
-        <div class="logo">
-            <img src="../assets/News/logo.png" alt="logo">
+    <header class="navbarHeader">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../assets/News/logo.png" alt="">
+            </div>
+
+            <ul class="links">
+                <li><a href="../Home/index.html" class="aNavbar">Home</a></li>
+                <li><a href="../Character/charachter.html" class="aNavbar">Characters</a></li>
+                <li><a href="../Maps/maps.html" class="aNavbar">Maps</a></li>
+                <li><a href="../About/about.html" class="aNavbar">About Game</a></li>
+
+            </ul>
+
+            <a href="../Regist/sign.html" class="actionButton">Register</a>
+
+            <div class="toggleButton">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+            </div>
         </div>
-    
-        <ul class="link">
-            <li><a href="../Home/index.html">Home</a></li>
-            <li> <a href="../Character/charachter.html">Characters</a></li>
-            <li><a href="../Maps/maps.html">Maps</a></li>
-            <li><a href="../About/about.html">About Game</a></li>
-            
-        </ul>
-    
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    
-        <div id="button">
-            <a href="../Regist/sign.html">Register</a>
+
+        <div class="dropdown">
+            <li><a href="../Home/index.html" class="aNavbar">Home</a></li>
+            <li><a href="../Character/charachter.html" class="aNavbar">Characters</a></li>
+            <li><a href="../Maps/maps.html" class="aNavbar">Maps</a></li>
+            <li><a href="../About/about.html" class="aNavbar">About Game</a></li>
+            <li><a href="../Regist/sign.html" class="actionButton">Register</a></li>
         </div>
-    </nav>
+
+    </header>
+
+    <!-- *********************** -->
 
     <div class="container-Sign">
         <div class="split left">
@@ -172,6 +183,7 @@
     </footer>
 </body>
 <script src="sign.js"></script>
+<script src="../newNavbar.js"></script>
 </html>
 
 

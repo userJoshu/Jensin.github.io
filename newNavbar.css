@@ -9,7 +9,7 @@ li {
     list-style: none;
 }
 
-a {
+.aNavbar {
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -18,7 +18,7 @@ a {
     padding: 4px 4px;
 }
 
-a:hover {
+.aNavbar:hover {
     font-size: 20px;
     background-color: #F1E26F;
     border-radius: 10px;
@@ -33,12 +33,13 @@ a:hover {
     scale: 2;
 } */
 
-header {
+.navbarHeader {
     width: 100%;
-    background: linear-gradient(to bottom, rgba(255,255,255,5), rgba(255,255,255,0));
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0));
     position: fixed;
     padding: 10px 50px;
     backdrop-filter: blur(1px);
+    z-index: 100;
 }
 
 .navbar {
@@ -49,6 +50,8 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .navbar .links {
     display: flex;
@@ -77,6 +80,8 @@ header {
     padding: 8px 20px;
     border-radius: 20px;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .actionButton:hover {
@@ -91,16 +96,15 @@ header {
 /* DROPDOWN */
 .dropdown {
     position: absolute;
-    right: 30px;
     top: 60px;
     width: 300px;
     height: 0;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     overflow: hidden;
     display: none;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
 }
 
 .dropdown.open {
@@ -124,6 +128,7 @@ header {
 
 /* RESPONSIVE 1040 391 ***********************************/
 @media only screen and (max-width: 391px){
+
     .navbar .links, 
     .navbar .actionButton {
         display: none;
@@ -135,13 +140,15 @@ header {
 
     .dropdown {
         display: block;
+        margin-top: 5px;
+        right: 0px;
+        left: 0px;
     }
 
 }
 
 
 @media only screen and (max-width: 1040px){
-
     .navbar .links, 
     .navbar .actionButton {
         display: none;
@@ -153,8 +160,9 @@ header {
 
     .dropdown {
         display: block;
-        left: 60px;
-        width: unset;
+        width: 400px;
+        right: 50px;
+        margin-top: 5px;
     }
 
     /* .dropdown li a:hover {
@@ -174,8 +182,23 @@ header {
 
 /* ANIMATION */
 
-/* 
-.toggleButton .line:nth-child(1){
+.animationLine1 {
+    transform: translateY(10px) rotate(225deg);
+    transition: 0.2s;
+}
+
+.animationLine2 {
+    opacity: 0;
+}
+
+.animationLine3 {
+    transform: translateY(-10px) rotate(-225deg);
+    transition: 0.2s;
+}
+
+
+
+/* .toggleButton .line:nth-child(1){
     transform: translateY(10px) rotate(225deg);
 }
 
